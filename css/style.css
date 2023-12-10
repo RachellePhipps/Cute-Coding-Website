@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Yesteryear&display=swap');
+
+:root {
+    --background-color: #fdeee9;
+    --line-color-1: rgb(255, 255, 255);
+    --line-color-2: #ffffff;
+    --icon-color:rgb(52, 42, 45);
+    --hover-color-before:  rgb(144, 126, 130);
+    --light-blue:  #7af3f1;
+    --base-font: 'Josefin Sans';
+    --red-color: rgb(172, 22, 52);
+  }
+  
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+div.header-nav {
+    text-align: center;
+    word-spacing: 2rem;
+    margin-top: 20px;
+}
+
+.header-nav li {
+    display: inline-block;
+    
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: var(--hover-color-before);
+    font-family: var(--base-font);
+    font-size: .9rem;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.header-nav li a:hover {
+    color: rgb(66, 12, 29);
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px);
+    background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px;
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#home-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.home-screen {
+    text-align: center;
+}
+
+.home-screen h1 {
+    font-family: 'Yesteryear';
+    font-size: 4rem;
+    line-height: 34px;
+    height: 15px;
+    color: var(--red-color);
+}
+
+.home-screen li {
+    margin: .3rem;
+}
+
+.home-screen h3 {
+    font-family: var(--base-font);
+    height: 3px;
+    color: var(--hover-color-before);
+}
+
+.home-screen p {
+    padding: .3rem;
+    font-family: var(--base-font);
+}
+
+.icon-github {
+    font-size: 25px;
+    color: var(--hover-color-before);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.icon-github:hover {
+    color: var(--icon-color);
+}
+
+.icon-linked {
+    font-size: 25px;
+    color: var(--hover-color-before);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.icon-linked:hover {
+    color: var(--icon-color);
+}
+
+.icon-art {
+    font-size: 25px;
+    color: var(--hover-color-before);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.icon-art:hover {
+    color: var(--icon-color);
+}
+
+
+div.home-screen {
+    word-spacing: 2rem;
+}
+
+
+/* CSS */
+.button-52 {
+font-family: var(--base-font);
+margin-top: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #13ddda;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.halftone {
+    background-image: radial-gradient(
+      circle at center,
+      black 0.25rem,
+      transparent 0
+    );
+    background-size: 1rem 1rem;
+    background-repeat: round;
+  }
+
+
+.square {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+mark {
+    display: inline-block;
+    line-height: .5em;
+    padding-bottom: 0.5em;
+    background-color: var(--light-blue);
+  }

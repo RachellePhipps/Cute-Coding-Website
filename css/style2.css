@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Yesteryear&display=swap');
+
+:root {
+    --background-color: #fdeee9;
+    --line-color-1: rgb(255, 255, 255);
+    --line-color-2: #ffffff;
+    --icon-color:rgb(52, 42, 45);
+    --hover-color-before:  rgb(195, 175, 142);
+    --light-blue:  #7af3f1;
+    --base-font: 'Josefin Sans';
+    --red-color: rgb(172, 22, 52);
+  }
+  
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+div.header-nav {
+    text-align: center;
+    word-spacing: 2rem;
+    margin-top: 20px;
+}
+
+.header-nav li {
+    display: inline-block;
+    
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: var(--hover-color-before);
+    font-family: var(--base-font);
+    font-size: .9rem;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.header-nav li a:hover {
+    color: rgb(255, 204, 0);
+}
+
+body { 
+    margin: 20px; 
+    text-align: left; 
+    background-color: #069bc8;
+  } 
+
+
+  img { 
+    float: left; 
+    margin: 70px;
+  } 
+
+  p { 
+    text-align: left; 
+    font-size: 25px; 
+    margin-right: 200px;
+  } 
+
+.photo_and_text {
+    padding: 30px;
+    padding-top: 100px;
+}
